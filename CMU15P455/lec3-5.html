@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>cmu-15-455-lec3-5</title>
+
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="https://eraft.cn">主页</a>
+                        <a class="nav-link" href="https://eraft.cn/arch">课程体系图</a>
+                        <a class="nav-link" target="_blank" href="https://github.com/eraft-io">我们的开源项目</a>
+                        <!-- <a class="nav-link">讨论区</a> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">ERaft 开发组</h5>
+                    <p class="card-text">我们是一个专注于解读国外名校分布式存储相关开源课程的组织</p>
+                    <a href="https://www.zhihu.com/people/liu-jie-84-52" target="_blank" class="btn btn-dark">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </br>
+        <div class="row">
+            <div class="col-3">
+              <div style="overflow:scroll; width:100%; height:460px;" class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action" href="https://eraft.cn/CMU15P455/lec3-1">CMUDB-LEC3-1-存储设备</a>
+                <a class="list-group-item list-group-item-action" href="https://eraft.cn/CMU15P455/lec3-2">CMUDB-LEC3-2-磁盘存储系统</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec3-3" role="tab" aria-controls="list-lec3-3">CMUDB-LEC3-3-数据库管理系统 vs OS</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec3-4" role="tab" aria-controls="list-lec3-4">CMUDB-LEC3-4-文件存储和数据库页面</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec3-5" role="tab" aria-controls="list-lec3-5">CMUDB-LEC3-5-数据库堆文件</a>
+
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec4-1" role="tab" aria-controls="list-lec4-1">CMUDB-LEC4-1-数据表示</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec4-2" role="tab" aria-controls="list-lec4-2">CMUDB-LEC4-2-工作负载</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec4-3" role="tab" aria-controls="list-lec4-3">CMUDB-LEC4-3-存储模型</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec5-1" role="tab" aria-controls="list-lec5-1">CMUDB-LEC5-1-数据库锁与闩锁</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec5-2" role="tab" aria-controls="list-lec5-2">CMUDB-LEC5-2-数据库缓冲池</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec5-3-1" role="tab" aria-controls="list-lec5-3-1">CMUDB-LEC5-3-BufferPool 优化（一）</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec5-3-2" role="tab" aria-controls="list-lec5-3-2">CMUDB-LEC5-3-BufferPool 优化（二）</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec5-4" role="tab" aria-controls="list-lec5-4">CMUDB-LEC5-4-缓冲池策略</a>
+
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec6-1" role="tab" aria-controls="list-lec6-1">CMUDB-LEC6-1-数据结构</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec6-2" role="tab" aria-controls="list-lec6-2">CMUDB-LEC6-2-哈希表</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec6-3" role="tab" aria-controls="list-lec6-3">CMUDB-LEC6-3-哈希函数</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec6-4-1" role="tab" aria-controls="list-lec6-3">CMUDB-LEC6-4-1-静态哈希方案</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec6-4-2" role="tab" aria-controls="list-lec6-3">CMUDB-LEC6-4-2-罗宾汉哈希</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec6-4-3" role="tab" aria-controls="list-lec6-3">CMUDB-LEC6-4-3-布谷鸟哈希</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec6-5" role="tab" aria-controls="list-lec6-5">CMUDB-LEC6-5-动态哈希方案</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec6-6" role="tab" aria-controls="list-lec6-5">CMUDB-LEC6-6-线性哈希</a>
+
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-1" role="tab" aria-controls="list-lec7-1">CMUDB-LEC7-1-B+树简介</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-2" role="tab" aria-controls="list-lec7-2">CMUDB-LEC7-2-B+树叶子节点</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-3" role="tab" aria-controls="list-lec7-3">CMUDB-LEC7-3-B+树插入操作</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-4" role="tab" aria-controls="list-lec7-4">CMUDB-LEC7-4-B+树删除操作</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-5" role="tab" aria-controls="list-lec7-5">CMUDB-LEC7-5-B+树索引</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-6" role="tab" aria-controls="list-lec7-6">CMUDB-LEC7-6-B+树设计选择</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-7" role="tab" aria-controls="list-lec7-7">CMUDB-LEC7-7-B+树设计（可变长度的键）</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-8" role="tab" aria-controls="list-lec7-8">CMUDB-LEC7-8-B+树设计选择</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec7-9" role="tab" aria-controls="list-lec7-9">CMUDB-LEC7-9-B+树优化</a>
+
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec8-1" role="tab" aria-controls="list-lec8-1">CMUDB-LEC8-1-B+树重复键</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec8-2" role="tab" aria-controls="list-lec8-2">CMUDB-LEC8-2-表索引</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec8-3" role="tab" aria-controls="list-lec8-3">CMUDB-LEC8-3-附加索引</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec8-4" role="tab" aria-controls="list-lec8-4">CMUDB-LEC8-4-前缀索引</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec8-5" role="tab" aria-controls="list-lec8-5">CMUDB-LEC8-5-前缀键跨度</a>
+
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec9-1" role="tab" aria-controls="list-lec9-1">CMUDB-LEC9-1-索引并发控制介绍</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec9-2" role="tab" aria-controls="list-lec9-2">CMUDB-LEC9-2-索引并发控制锁 vs 闩锁</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec9-3" role="tab" aria-controls="list-lec9-3">CMUDB-LEC9-3-索引并发控制闩锁的实现</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec9-4" role="tab" aria-controls="list-lec9-4">CMUDB-LEC9-4-哈希索引的并发控制</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec9-5" role="tab" aria-controls="list-lec9-5">CMUDB-LEC9-5-B+树索引的并发控制</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec9-6" role="tab" aria-controls="list-lec9-6">CMUDB-LEC9-6-B+树索引的并发控制优化</a>
+                
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec10-1" role="tab" aria-controls="list-lec10-1">CMUDB-LEC10-1-数据库排序</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec10-2" role="tab" aria-controls="list-lec10-2">CMUDB-LEC10-2-数据库外归并排序</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec10-3" role="tab" aria-controls="list-lec10-3">CMUDB-LEC10-3-数据库聚合操作1</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec10-4" role="tab" aria-controls="list-lec10-4">CMUDB-LEC10-4-数据库聚合操作2</a>
+
+
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec11-1" role="tab" aria-controls="list-lec11-1">CMUDB-LEC11-1-数据库 JOIN 操作原理</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec11-2" role="tab" aria-controls="list-lec11-2">CMUDB-LEC11-2-简单的嵌套循环 JOIN 算法</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec11-3" role="tab" aria-controls="list-lec11-3">CMUDB-LEC11-3-块嵌套循环 JOIN 算法</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec11-4" role="tab" aria-controls="list-lec11-4">CMUDB-LEC11-4-索引嵌套循环 JOIN 算法</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec11-5" role="tab" aria-controls="list-lec11-5">CMUDB-LEC11-5-SortMerge JOIN 算法</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec11-6" role="tab" aria-controls="list-lec11-6">CMUDB-LEC11-6-基本 Hash Join 算法</a>
+               
+
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec12-1" role="tab" aria-controls="list-lec12-1">CMUDB-LEC12-1-迭代器模型</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec12-2" role="tab" aria-controls="list-lec12-2">CMUDB-LEC12-2-物化模型</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec12-3" role="tab" aria-controls="list-lec12-3">CMUDB-LEC12-3-矢量化模型</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec12-4" role="tab" aria-controls="list-lec12-4">CMUDB-LEC12-4-顺序扫描</a>
+
+
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec13-1" role="tab" aria-controls="list-lec13-1">CMUDB-LEC13-1-查询并行执行概述</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec13-2" role="tab" aria-controls="list-lec13-2">CMUDB-LEC13-2-查询执行的 Process Model 处理模型</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec13-3" role="tab" aria-controls="list-lec13-3">CMUDB-LEC13-3-查询并行方式</a>
+                <a class="list-group-item list-group-item-action"   href="https://eraft.cn/CMU15P455/lec13-4" role="tab" aria-controls="list-lec13-4">CMUDB-LEC13-4-IO并行</a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-lec3-1" role="tabpanel" aria-labelledby="list-home-list">
+                    解读CMU15445数据库系统LEC3数据库存储-005-数据库堆文件 - eraft开发组的视频 - 知乎
+https://www.zhihu.com/zvideo/1435361376004505600
+                </div>
+            </div>
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC81NTc3NS8zMjI0MQ==">
+                    <script type="text/javascript">
+                (function(d, s) {
+                    var j, e = d.getElementsByTagName(s)[0];
+
+                    if (typeof LivereTower === 'function') { return; }
+
+                    j = d.createElement(s);
+                    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                    j.async = true;
+
+                    e.parentNode.insertBefore(j, e);
+                })(document, 'script');
+                    </script>
+                <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+            </div>
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://eraft.cn/pdfobject.min.js"></script>
+    <script>
+        PDFObject.embed("https://eraft.cn/pdf/lec13-1.pdf", "#lec13-1");
+    </script>
+    <style>
+        .pdfobject-container { height: 36rem; border: 1rem solid rgba(0,0,0,.1); }
+    </style>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
